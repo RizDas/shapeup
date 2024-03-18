@@ -8,13 +8,18 @@ const Navbar = () => (
     <Link to="/">
       <img src={Logo} alt="logo" className='w-12 h-12 mx-5 mb-5 opacity-70 hover:opacity-100 shadow-md'/>
     </Link>
-    <Stack
-      direction="row" gap="40px" fontFamily="Alegreya" fontSize="24px" alignItems="flex-end">
-      <Link to="/" className='text-black hover:text-red-600 font-semibold mb-5'>
+    <Stack className='gap-10 items-end' direction="row" fontFamily="Alegreya">
+      <Link to="/" className='text-black hover:text-red-600 font-semibold mb-5 text-2xl'>
         Home
       </Link>
-      <a href="#exercises" className='text-black hover:text-red-600 font-semibold mb-5'>
+      <a href="#exercises" className='text-black hover:text-red-600 font-semibold mb-5 text-2xl'>
         Exercises
+      </a>
+      <a href="#pricing" className='text-black hover:text-red-600 font-semibold mb-5 text-2xl'>
+        Subscription
+      </a>
+      <a className='text-black font-semibold mb-5'>
+        (Subscription coming soon)
       </a>
     </Stack>
   </Stack>
